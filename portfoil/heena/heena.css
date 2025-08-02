@@ -1,0 +1,227 @@
+/* === Reset and Base Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+    background: #081b29;
+}
+
+/* === Header === */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    background: #051129;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #0ef;
+}
+
+/* === Home Section === */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+    height: 100vh;
+}
+
+.home-content h3 {
+    font-size: 28px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.home-content p {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.text {
+    color: #0ef;
+    font-weight: bold;
+}
+
+.Home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    margin: 10px 10px 10px 0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.Home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 10px #0ef;
+}
+
+.btn-box {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #0ef;
+    border-radius: 40px;
+    color: #081b29;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 10px #0ef;
+}
+
+/* === About Section === */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 10%;
+    flex-wrap: wrap;
+}
+
+.about-img img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about-text h2 span,
+.sub-title span {
+    color: #0ef;
+}
+
+.about-text h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* === Services Section === */
+.services {
+    padding: 80px 10%;
+    background: #0b1e35;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.services-list div {
+    background: #061529;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.2);
+    transition: transform 0.3s;
+}
+
+.services-list div:hover {
+    transform: translateY(-10px);
+}
+
+.services-list div i {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #0ef;
+}
+
+.services-list div h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-list div p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.read {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0ef;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* === Scroll to Top Button === */
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.top i {
+    color: #081b29;
+    background: #0ef;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+/* === Footer === */
+.last-text {
+    text-align: center;
+    background: #05203c;
+    padding: 20px;
+    font-size: 14px;
+    color: #ddd;
+}
